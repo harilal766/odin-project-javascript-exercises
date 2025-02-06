@@ -39,3 +39,22 @@ container.appendChild(box);
 box.appendChild(boxHeading);
 box.appendChild(boxPara);
 
+
+// the JavaScript file
+
+
+btn.addEventListener("click", function (e) {
+    console.log(e);
+  });
+  
+
+function alertFunction(){
+    alert("HELLO");
+  }
+
+
+btn.addEventListener("click",alertFunction);
+
+btn.addEventListener("click",function(e){
+    e.target.style.background = "blue";
+});
