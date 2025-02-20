@@ -28,11 +28,18 @@ const power = function(num,powerNum) {
 };
 
 const factorial = function(num) {
-	let fact;
+	let fact = 1;
   // reduce n until it becomes zero
-  for (let i=1; i<=num; i++){
-    fact *= (num*(num-i));
+  // condition for 0 and 1
+  if (num === 2){
+   fact = 2;
   }
+  else if (num > 2){
+    for (let i=1; i<=num; i++){
+      fact *= (num*(num-i));
+    }
+  }
+  
   return fact;
 };
 
