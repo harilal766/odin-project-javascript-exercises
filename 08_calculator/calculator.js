@@ -23,8 +23,12 @@ const power = function(num,powerNum) {
 
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	let n = num; let fact = num;
+  // reduce n until it becomes zero
+  for (let i=n; i>0; i--){
+    pass
+  }
 };
 
 // Do not edit below this line
