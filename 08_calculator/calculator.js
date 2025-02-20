@@ -35,8 +35,9 @@ const factorial = function(num) {
    fact = 2;
   }
   else if (num > 2){
-    for (let i=1; i<=num; i++){
-      fact *= (num*(num-i));
+    fact = num;
+    for (let i=1; i<num; i++){
+      fact *= num-i;
     }
   }
   
