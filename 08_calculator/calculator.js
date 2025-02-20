@@ -24,11 +24,12 @@ const power = function(num,powerNum) {
 };
 
 const factorial = function(num) {
-	let n = num; let fact = num;
+	let fact;
   // reduce n until it becomes zero
-  for (let i=n; i>0; i--){
-    pass
+  for (let i=1; i<=num; i++){
+    fact *= (num*(num-i));
   }
+  return fact;
 };
 
 // Do not edit below this line
